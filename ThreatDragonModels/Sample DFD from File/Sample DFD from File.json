@@ -139,7 +139,7 @@
                   "id": "95c150c2-ccbb-4c40-9d9a-f4caf0918c43",
                   "title": "Spoofing",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Attacker can impersonate the browser client to send forged requests, hijack sessions, or replay stolen credentials",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
@@ -150,7 +150,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -861,18 +861,18 @@
                   "id": "0d95364c-55c7-42ec-bff0-9f34abf49198",
                   "title": "Spoofing",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Spoofing",
                   "description": "An attacker may set up a fake application for unauthorized access and credential theft",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
-                  "score": ""
+                  "score": "8.0"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1003,14 +1003,14 @@
                   "id": "a3613e87-5158-4dfe-a5ac-de636765c660",
                   "title": "Elevation of Privilege",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Critical",
                   "type": "Elevation of privilege",
                   "description": "Misconfigured roles or unsafe group memberships allow attackers to escalate privileges and gain access to rights beyond intended and assigned.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
-                  "score": ""
+                  "score": "9.2"
                 }
               ],
               "threatFrequency": {
@@ -1019,7 +1019,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 2
+                "elevationOfPrivilege": 3
               }
             }
           },
@@ -1145,19 +1145,19 @@
                   "id": "edcc29b7-7e4c-4b59-9d23-cf8c6094edf9",
                   "title": "Tampering with data through SQL Injection attack",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "High",
                   "type": "Tampering",
                   "description": "SQL injection through alteration of queries, bypass of authentication, and modification of stored data.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
-                  "score": ""
+                  "score": "8.2"
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 2,
+                "tampering": 3,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1287,24 +1287,33 @@
                   "id": "fbd0ab97-22a8-4c79-9222-48c163f3d4b5",
                   "title": "Spoofing",
                   "status": "Open",
-                  "severity": "TBD",
+                  "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Impersonation of the SQL backend so the web application writes to or queries a malicious target.",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
-                  "score": ""
+                  "score": "6.2"
                 }
               ],
               "threatFrequency": {
-                "spoofing": 2,
+                "spoofing": 3,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
