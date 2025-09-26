@@ -374,7 +374,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Verified",
-              "description": "",
+              "description": "Credentials are verified after sending user credentials",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -425,7 +425,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Auth Verification",
-              "description": "",
+              "description": "Authentication request sent to web application for REST functions",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -508,7 +508,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Verified",
-              "description": "",
+              "description": "Authorization done, actions and roles applied to user and is sent back",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -586,7 +586,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Success = 1",
-              "description": "",
+              "description": "Result of user feedback and requests",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -608,7 +608,8 @@
             "target": {
               "x": 650,
               "y": 370
-            }
+            },
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -631,7 +632,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Insert Query with Feedback Comments",
-              "description": "",
+              "description": "User actions and SQL queries with user feedback",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -713,7 +714,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Verifies the Privilege",
-              "description": "",
+              "description": "Once authentication is done, authorization verification is done",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -878,6 +879,13 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
