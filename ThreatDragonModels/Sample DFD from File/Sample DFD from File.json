@@ -133,10 +133,10 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "Low",
               "threats": [
                 {
-                  "id": "044ac749-1d6f-4a72-80a8-d8e54a2c1ed5",
+                  "id": "95c150c2-ccbb-4c40-9d9a-f4caf0918c43",
                   "title": "Spoofing",
                   "status": "Open",
                   "severity": "TBD",
@@ -145,7 +145,7 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 1,
+                  "number": 9,
                   "score": ""
                 }
               ],
@@ -854,10 +854,10 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": true,
-              "privilegeLevel": "",
+              "privilegeLevel": "High",
               "threats": [
                 {
-                  "id": "c8454a11-5787-4b99-ad5b-31b9cd2aa962",
+                  "id": "0d95364c-55c7-42ec-bff0-9f34abf49198",
                   "title": "Spoofing",
                   "status": "Open",
                   "severity": "TBD",
@@ -866,7 +866,7 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 2,
+                  "number": 10,
                   "score": ""
                 }
               ],
@@ -996,10 +996,10 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "High",
               "threats": [
                 {
-                  "id": "d11aa431-4e0e-424b-882e-537251576635",
+                  "id": "a3613e87-5158-4dfe-a5ac-de636765c660",
                   "title": "Elevation of Privilege",
                   "status": "Open",
                   "severity": "TBD",
@@ -1008,7 +1008,7 @@
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
                   "new": false,
-                  "number": 3,
+                  "number": 11,
                   "score": ""
                 }
               ],
@@ -1138,25 +1138,25 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "Very High",
               "threats": [
                 {
-                  "id": "0c3f1b0c-9a6b-46f4-9003-812edd7a65d6",
-                  "title": "New STRIDE threat",
+                  "id": "edcc29b7-7e4c-4b59-9d23-cf8c6094edf9",
+                  "title": "Tampering with data through SQL Injection attack",
                   "status": "Open",
                   "severity": "TBD",
-                  "type": "Spoofing",
+                  "type": "Tampering",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 4,
+                  "new": false,
+                  "number": 12,
                   "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 0,
+                "tampering": 1,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1280,24 +1280,24 @@
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
-              "privilegeLevel": "",
+              "privilegeLevel": "Highest",
               "threats": [
                 {
-                  "id": "84d2c0e8-1d20-451a-97cf-44f5d65cee58",
-                  "title": "New STRIDE threat",
+                  "id": "fbd0ab97-22a8-4c79-9222-48c163f3d4b5",
+                  "title": "Spoofing",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Spoofing",
                   "description": "Provide a description for this threat",
                   "mitigation": "Provide remediation for this threat or a reason if status is N/A",
                   "modelType": "STRIDE",
-                  "new": true,
-                  "number": 5,
+                  "new": false,
+                  "number": 14,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1311,6 +1311,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 5
+    "threatTop": 14
   }
 }
