@@ -901,6 +901,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1019,8 +1020,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 1
               }
-            },
-            "zIndex": 12
+            }
           },
           {
             "position": {
@@ -1043,6 +1043,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 13,
             "ports": {
               "groups": {
                 "top": {
@@ -1161,8 +1162,7 @@
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
-            },
-            "zIndex": 13
+            }
           },
           {
             "position": {
@@ -1185,6 +1185,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 14,
             "ports": {
               "groups": {
                 "top": {
@@ -1304,7 +1305,6 @@
                 "elevationOfPrivilege": 0
               }
             },
-            "zIndex": 14,
             "tools": {
               "items": [
                 "boundary",
