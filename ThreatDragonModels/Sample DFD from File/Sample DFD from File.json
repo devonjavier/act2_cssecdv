@@ -142,7 +142,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Attacker can impersonate the browser client to send forged requests, hijack sessions, or replay stolen credentials",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Proper implementation of Session Tokens, Anti-CSRF tokens, Content Security Policy",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 9,
@@ -150,7 +150,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 4,
+                "spoofing": 5,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -894,7 +894,7 @@
                   "severity": "High",
                   "type": "Spoofing",
                   "description": "An attacker may set up a fake application for unauthorized access and credential theft",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "HTTP with strong TLS, DNS Security, Email Authentication",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 10,
@@ -902,7 +902,7 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 4,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1036,7 +1036,7 @@
                   "severity": "Critical",
                   "type": "Elevation of privilege",
                   "description": "Misconfigured roles or unsafe group memberships allow attackers to escalate privileges and gain access to rights beyond intended and assigned.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Principle of Least Privilege, Strong authentication, activity monitoring",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 11,
@@ -1049,7 +1049,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 3
+                "elevationOfPrivilege": 4
               }
             }
           },
@@ -1178,7 +1178,7 @@
                   "severity": "High",
                   "type": "Tampering",
                   "description": "SQL injection through alteration of queries, bypass of authentication, and modification of stored data.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Input sanitization and validation, and secure LDAP libraries",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 12,
@@ -1187,7 +1187,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "tampering": 3,
+                "tampering": 4,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
@@ -1320,7 +1320,7 @@
                   "severity": "Medium",
                   "type": "Spoofing",
                   "description": "Impersonation of the SQL backend so the web application writes to or queries a malicious target.",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "mitigation": "Network Segmentation, SSL/TLS Encryption of connections",
                   "modelType": "STRIDE",
                   "new": false,
                   "number": 14,
@@ -1328,13 +1328,20 @@
                 }
               ],
               "threatFrequency": {
-                "spoofing": 3,
+                "spoofing": 6,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           }
         ]
